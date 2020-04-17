@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"/>
+
+<head>
+	<title>Money counter</title>
+</head>
+<body>
+	<h1>Testing</h1>
+	<br>
+	<p id="q"></p>
+	<script type="text/javascript"> //src="https://code.jquery.com/jquery-3.5.0.js">
+		var temp = fetch("http://localhost/temp.json");
+		//var json = JSON.parse(temp)
+		document.getElementById("q").innerHTML= temp
+		/*function update() {
+			x={{money}};
+			document.getElementById("q").innerHTML = x;
+			window.location.href='/refresh'
+			setTimeout(update,1000);
+		}
+		update();*/
+	</script>
+	<input type="button" onclick="location.href='/add'" value="Add money">
+	<!--<input type="button" onclick="loadmoney()" value="refresh">-->
+</body>
+</html>
