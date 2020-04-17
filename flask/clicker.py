@@ -19,5 +19,10 @@ def add():
 @app.route('/refresh')
 def refresh():
 	return render_template('clicker.html',money = mon)
+@app.route('/incMon')
+def incMon():
+	data = json.load(open('temp.json','r'))
+	data['money']+=10
+	return data
 if __name__=='__main__':
 	app.run(debug=True)

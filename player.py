@@ -8,7 +8,7 @@ class player:
 	is_playing=True			#false if the player has folded
 	score=0					#score of the cards in a game
 	#current_game
-	def __int__(plid,plname,money):
+	def __int__(self,plid,plname,money):
 		self.id=plid
 		self.name=plname
 		self.total_money=money
